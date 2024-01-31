@@ -9,6 +9,7 @@ import io.stark.meetup.feature.auth.factory.SignUpViewModelFactory
 @Module
 class AuthModule {
 
+
     @Provides
     fun provideCreateUserRepository(): CreateUserRepository {
         return CreateUserRepositoryImpl()

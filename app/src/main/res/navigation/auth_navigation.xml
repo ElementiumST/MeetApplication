@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="io.stark.meetup.feature.auth.view.SignInFragment"
+        android:label="SignInFragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_main_navigation_flow"
+            app:destination="@id/main_navigation_flow" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="io.stark.meetup.feature.auth.view.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_main_navigation_flow"
+            app:destination="@id/main_navigation_flow" />
+    </fragment>
+    <include app:graph="@navigation/home_navigation" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="io.stark.meetup.feature.auth.view.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_main_navigation_flow"
+            app:destination="@id/main_navigation_flow" />
+        <action
+            android:id="@+id/action_splashFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+</navigation>

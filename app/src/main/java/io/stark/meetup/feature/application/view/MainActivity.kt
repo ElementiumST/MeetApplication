@@ -1,4 +1,4 @@
-package io.stark.meetup.feature.application
+package io.stark.meetup.feature.application.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

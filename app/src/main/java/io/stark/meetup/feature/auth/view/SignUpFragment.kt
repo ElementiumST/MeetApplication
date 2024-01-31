@@ -11,7 +11,7 @@ import io.stark.meetup.feature.auth.di.DaggerSignUpComponent
 import io.stark.meetup.feature.auth.di.SignUpComponent
 import io.stark.meetup.feature.auth.viewmodel.SignUpViewModel
 
-class SignUpFragment() : Fragment() {
+class SignUpFragment : Fragment() {
 
     companion object {
         fun newInstance() = SignUpFragment()

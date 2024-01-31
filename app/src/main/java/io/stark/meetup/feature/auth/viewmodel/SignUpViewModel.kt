@@ -4,7 +4,9 @@ import androidx.lifecycle.ViewModel
 import io.stark.domain.repository.CreateUserRepository
 
 class SignUpViewModel(
-    private val createUserRepository: CreateUserRepository? = null
+    private val createUserRepository: CreateUserRepository
 ) : ViewModel() {
+
+
 
 }

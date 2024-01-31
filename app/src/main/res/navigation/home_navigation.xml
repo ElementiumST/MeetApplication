@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_flow"
+    app:startDestination="@id/newsLineFragment">
+    <fragment
+        android:id="@+id/newsLineFragment"
+        android:name="io.stark.meetup.feature.home.view.NewsLineFragment"
+        android:label="fragment_news_line"
+        tools:layout="@layout/fragment_news_line" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="io.stark.meetup.feature.home.view.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="io.stark.meetup.feature.home.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

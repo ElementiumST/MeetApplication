@@ -42,15 +42,18 @@ android {
 
 dependencies {
 
-    val retrofitVersion: String by project
-    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
-
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     val daggerVersion: String by project
     kapt("com.google.dagger:dagger-compiler:$daggerVersion")
     implementation("com.google.dagger:dagger:$daggerVersion")
-//    implementation("com.google.dagger:dagger-android:$daggerVersion")
-//    implementation("com.google.dagger:dagger-android-support:$daggerVersion")
-//    kapt("com.google.dagger:dagger-android-processor:$daggerVersion")
+
+    val retrofitVersion: String by project
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
