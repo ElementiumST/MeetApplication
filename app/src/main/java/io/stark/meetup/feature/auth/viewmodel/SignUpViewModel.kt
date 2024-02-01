@@ -1,10 +1,10 @@
 package io.stark.meetup.feature.auth.viewmodel
 
 import androidx.lifecycle.ViewModel
-import io.stark.domain.repository.CreateUserRepository
+import io.stark.domain.repository.UserRepository
 
 class SignUpViewModel(
-    private val createUserRepository: CreateUserRepository
+    private val userRepository: UserRepository
 ) : ViewModel() {
 
 

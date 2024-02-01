@@ -6,4 +6,5 @@
     <string name="firstName">Имя</string>
     <string name="login">логин</string>
     <string name="password">пароль</string>
+    <string name="doSignIn">войти</string>
 </resources>
