@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signIn">Вход\n</string>
+    <string name="login">Имя пользователя\n</string>
+    <string name="password">Пароль\n</string>
+    <string name="doSignIn">Войти</string>
+</resources>

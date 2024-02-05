@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import io.stark.meetup.R
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //TODO deeplink handle
     }
 }

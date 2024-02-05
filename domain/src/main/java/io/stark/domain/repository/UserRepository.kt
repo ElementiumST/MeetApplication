@@ -8,4 +8,14 @@ interface UserRepository {
     suspend fun createUser(userData: UserRegistrationDomainBeam)
 
     suspend fun loginUser(loginUserDomainBeam: LoginUserDomainBeam): AuthSetDomainBeam
+
+    suspend fun updateAuthSet(refreshToken: String): AuthSetDomainBeam
+
+    suspend fun saveAuthSet(authSetDomainBeam: AuthSetDomainBeam)
+    suspend fun saveLoginData(loginUserDomainBeam: LoginUserDomainBeam)
+
+    suspend fun getCachedAuthSet(): AuthSetDomainBeam
+
+    suspend fun getCachedLoginData(): LoginUserDomainBeam
+
 }
